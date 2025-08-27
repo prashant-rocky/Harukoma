@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Harukoma | home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="reservation.html">
+                        <button class="myBtn bg-white text-black ms-3">Book table</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="slider text-white text-center">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active"
+                    style="background: url(assets/images/banner1.jpg) center/cover no-repeat; min-height: 100vh;">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100 px-3">
+                        <h6 class="text-uppercase fs-6">Welcome to Harukoma</h6>
+                        <h1 class="fw-bold display-3">Experience Osaka’s <br> Most Beloved Sushi Spot</h1>
+
+                        <div class="mt-3">
+                            <a href="about.html" class="text-decoration-none text-white">
+                                <button class="myBtn mx-2">Read more</button>
+                            </a>
+                            <a href="reservation.html" class="text-decoration-none text-white">
+                                <button class="myBtn btnHover bg-transparent mx-2 ">Book
+                                    Table</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item"
+                    style="background: url(assets/images/banner2.jpg) center/cover no-repeat; min-height: 100vh;">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100 px-3">
+                        <h6 class="text-uppercase fs-6">Welcome to Harukoma</h6>
+                        <h1 class="fw-bold display-3">Fresh, Generous Cuts of <br> Sushi Worth the Wait
+                        </h1>
+
+                        <div class="mt-3">
+                            <a href="about.html" class="text-decoration-none text-white">
+                                <button class="myBtn mx-2">Read more</button>
+                            </a>
+                            <a href="reservation.html" class="text-decoration-none text-white">
+                                <button class="myBtn btnHover bg-transparent mx-2">Book
+                                    Table</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item"
+                    style="background: url(assets/images/banner3.jpg) center/cover no-repeat; min-height: 100vh;">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100 px-3">
+                        <h6 class="text-uppercase fs-6">Welcome to Harukoma</h6>
+                        <h1 class="fw-bold display-3">Authentic Flavors, <br> Unmatched Value</h1>
+
+                        <div class="mt-3">
+                            <a href="about.html" class="text-decoration-none text-white">
+                                <button class="myBtn mx-2">Read more</button>
+                            </a>
+                            <a href="reservation.html" class="text-decoration-none text-white">
+                                <button class="myBtn btnHover bg-transparent mx-2">Book
+                                    Table</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Our Story Section (HTML) -->
+    <section class="about py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <h5 class="mt-5">Our Story</h5>
+                    <h3 class="mainColor">Our Story: Tradition, Taste, and Osaka’s Spirit</h3>
+                    <p>
+                        “At Harukoma, we believe great sushi is more than just a meal—it’s an experience rooted in
+                        freshness, generosity, and Osaka’s warm hospitality. For years, we’ve delighted locals and
+                        travelers with thick cuts of sushi, authentic flavors, and unbeatable value. Our story is one of
+                        passion, tradition, and a deep love for sharing Japanese cuisine that leaves lasting memories.”
+                    </p>
+                    <p>
+                        Harukoma has long been a favorite in Osaka, where tradition meets generous flavors. Known for
+                        fresh seafood and hearty portions of sushi, we continue to serve with the same passion and care
+                        that made us a local treasure. Our story is built on authenticity, community, and the joy of
+                        sharing unforgettable meals
+                    </p>
+                    <a href="/about" class="myBtn btnHover bg-transparent text-black text-decoration-none">Read more</a>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/about1.jfif" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/about2.jfif" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/about3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/about4.jfif" />
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="menu py-5 text-center">
+        <div class="container">
+            <h2>Menu</h2>
+            <h3 class="mainColor">Savor Osaka’s Finest Sushi Creations</h3>
+            <div class="row py-5">
+                <div class="col-md-6 ">
+                    <div class="row" id="menu1">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row" id="menu2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial py-5 text-center" style="
+    background-image: url('assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  ">
+        <div class="container p-5">
+            <h1 class="text-white py-3">testimonials</h1>
+            <div class="swiper Tswiper TmySwiper text-white">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-white">
+                        <h3>"The ramen here is absolutely incredible! The broth is rich, flavorful, and perfectly
+                            balanced. It truly feels like a taste of Japan in every bite."</h3>
+                        <p>— Sakura M., Tokyo</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>"I loved the cozy atmosphere and friendly staff. The noodles were fresh, the toppings
+                            generous, and the flavors unforgettable. I can’t wait to come back!"</h3>
+                        <p>— David K., New York</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>"This place is a hidden gem! Every dish is crafted with passion and authenticity. Easily the
+                            best ramen experience I’ve ever had."</h3>
+                        <p>— Ayaka S., Osaka</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section class="chefs py-5">
+        <div class="container text-center">
+            <h2>Chefs</h2>
+            <h3 class="mainColor">Meet the Masters Behind the Sushi</h3>
+            <div class="row py-3">
+                <div class="col-md-4 py-3">
+                    <div class="chefsImg" >
+                        <img src="assets/images/about1.jfif" alt="error" height="400px" width="100%">
+                    </div>
+                    <div class="chefsDetail">
+                        <h3 class="mainColor pt-3">Chef Hiroshi Tanaka</h3>
+                        <p>Chef Hiroshi Tanaka</p>
+                        <h5>Experience : 9Years</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="chefsImg" >
+                        <img src="assets/images/about2.jfif" alt="error" height="400px" width="100%">
+                    </div>
+                    <div class="chefsDetail">
+                        <h3 class="mainColor pt-3">Chef Kenji Sato</h3>
+                        <p>Seafood Specialist</p>
+                        <h5>Experience : 11Years</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="chefsImg" >
+                        <img src="assets/images/about3.jpg" alt="error" height="400px" width="100%">
+                    </div>
+                    <div class="chefsDetail">
+                        <h3 class="mainColor pt-3">Chef Ayaka Nakamura</h3>
+                        <p>Sous Chef & Culinary Innovator</p>
+                        <h5>Experience : 16 Years</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery py-5 text-white" style="
+    background-image: url('assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  ">
+        <div class="container p-5 text-center">
+            <div class="row">
+                <div class="col-md-6 text-start">
+                    <h3 class="pt-5">Visit Us During Our Opening Hours</h3>
+                    <p><strong> At Harukoma, we welcome you with fresh sushi and warm hospitality throughout the week.
+                            Plan your visit and enjoy authentic Osaka flavors at the perfect time.</strong>
+                    </p>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <div class="hours-card">
+                        <h3>Opening Hours</h3>
+                        <ul class="hours-list">
+                            <li><span class="day">Wednesday</span><span>11 am – 9:30 pm</span></li>
+                            <li><span class="day">Thursday</span><span>11 am – 9:30 pm</span></li>
+                            <li><span class="day">Friday</span><span>11 am – 9:30 pm</span></li>
+                            <li><span class="day">Saturday</span><span>11 am – 9:30 pm</span></li>
+                            <li><span class="day">Sunday</span><span>11 am – 9:30 pm</span></li>
+                            <li><span class="day">Monday</span><span>11 am – 9:30 pm</span></li>
+                            <li><span class="day">Tuesday</span><span class="closed">Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="go-to-reservation">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-black">Reserve your spot at Harukoma and enjoy Osaka’s freshest sushi without the
+                        wait. Whether it’s a casual meal or a special occasion, booking ahead ensures the perfect dining
+                        experience.</p>
+                    <a href="reservation.html" class="text-decoration-none text-white">
+                        <button class="myBtn btnHover mx-2">Book a table</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog py-5">
+        <div class="container text-center">
+            <h2>Latest News</h2>
+            <h3 class="mainColor">Stories & Flavors of Harukoma</h3>
+            <div class="row text-start py-3">
+                <div class="col-md-4 py-3">
+                    <div class="blogImg">
+                        <a href="singleBlog1.html">
+                            <img src="assets/images/blog1.webp" alt="error" width="100%" height="200px">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <p class="mainColor pt-2"><em>By Admin • August 26, 2025</em></p>
+                        <a href="singleBlog1.html" class="text-decoration-none text-black">
+                            <h5 class="my-3">The Art of Crafting Authentic Ramen</h5>
+                        </a>
+                        <p>Ramen is more than just a dish; it’s an experience that reflects centuries of culinary heritage.........</p>
+                        <a href="singleBlog1.html" class="text-decoration-none text-black">
+                            <button class="myBtn btnHover mx-2 bg-transparent text-black">Read more</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="blogImg">
+                        <a href="singleBlog2.html">
+                            <img src="assets/images/blog2.avif" alt="error" width="100%" height="200px">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <p class="mainColor pt-2"><em>By Admin • August 26, 2025</em></p>
+                        <a href="singleBlog2.html" class="text-decoration-none text-black">
+                            <h5 class="my-3">The Secret Behind Perfect Sushi</h5>
+                        </a>
+                        <p>Sushi is one of Japan’s most iconic dishes, admired worldwide for its simplicity,........</p>
+                        <a href="singleBlog2.html" class="text-decoration-none text-black">
+                            <button class="myBtn btnHover mx-2 bg-transparent text-black">Read more</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="blogImg">
+                        <a href="singleBlog3.html">
+                            <img src="assets/images/blog3.avif" alt="error" width="100%" height="200px">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <p class="mainColor pt-2"><em>By Admin • August 26, 2025</em></p>
+                        <a href="singleBlog3.html" class="text-decoration-none text-black">
+                            <h5 class="my-3">The Art of Japanese Tea Ceremony</h5>
+                        </a>
+                        <p>The Japanese tea ceremony, or <em>chanoyu</em>, is more than just preparing a.........</p>
+                        <a href="singleBlog3.html" class="text-decoration-none text-black">
+                            <button class="myBtn btnHover mx-2 bg-transparent text-black">Read more</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer navbar text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo + Description -->
+                <div class="col-md-3">
+                    <div class="footerLogo">
+                        <img src="assets/images/logo.png" alt="error">
+                        <p class="py-3">
+                            Harukoma serves authentic Osaka sushi with fresh, generous cuts and unbeatable value. Loved
+                            by locals and travelers, we blend tradition, flavor, and hospitality to create unforgettable
+                            dining experiences.
+                        </p>
+                        <p><i class="fas fa-location-dot"></i> 5 Chome-5-2 Tenjinbashi, Kita Ward, Osaka, 530-0041,
+                            Japan
+                        </p>
+                        <p><i class="fas fa-phone"></i> Phone: +81 6-6351-4319</p>
+                        <p><i class="fas fa-envelope"></i> Email: info@example.com</p>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-3 px-md-5">
+                    <h3 class="py-3">Useful Links</h3>
+                    <p><a href="index.html" class="text-decoration-none">Home</a></p>
+                    <p><a href="about.html" class="text-decoration-none">About</a></p>
+                    <p><a href="blog.html" class="text-decoration-none">Blog</a></p>
+                    <p><a href="menu.html" class="text-decoration-none">Menu</a></p>
+                    <p><a href="contact.html" class="text-decoration-none">Contact</a></p>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/harukoma_5tenjinbashi/"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- Legal Information -->
+                <div class="col-md-3">
+                    <h3 class="py-3">Legal Information</h3>
+                    <p><a href="cookies.html" class="text-decoration-none">Cookies Policy</a></p>
+                    <p><a href="privacy.html" class="text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="disclaimer.html" class="text-decoration-none">Disclaimer</a></p>
+                    <p><a href="terms&condition.html" class="text-decoration-none">Terms & Conditions</a></p>
+                    <div class="text-start p-2">
+                        <a href="#" id="open_preferences_center" class="text-decoration-none">Update cookies
+                            preferences</a>
+                    </div>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="col-md-3">
+                    <h3 class="py-3">Opening Hours</h3>
+                    <p>Wednesday 11 am–9:30 pm</p>
+                    <p>Thursday 11 am–9:30 pm</p>
+                    <p>Friday 11 am–9:30 pm</p>
+                    <p>Saturday 11 am–9:30 pm</p>
+                    <p>Sunday 11 am–9:30 pm</p>
+                    <p>Monday 11 am–9:30 pm</p>
+                    <p>Tuesday: Closed</p>
+
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="row w-100 text-center">
+                <div class="col-md-12">
+                    <div class="text-center py-3">
+                        <p class="mb-0">© 2025 Harukoma. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"></script>
+    <!-- ✅ Bootstrap JS bundle (required for toggler & dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
