@@ -54,62 +54,70 @@
             <h1>Book you table</h1>
             <h3 class="mainColor py-2">Reserve Your Table at Harukoma</h3>
             <p>
-               Enjoy Osaka’s finest sushi without the wait. Secure your seat in advance and <br> let our chefs serve you a dining experience filled with freshness, flavor, and tradition.
+                Enjoy Osaka’s finest sushi without the wait. Secure your seat in advance and <br> let our chefs serve
+                you a dining experience filled with freshness, flavor, and tradition.
             </p>
         </div>
     </section>
     <section class="reservation-section py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="reservation-card p-5 rounded-4 shadow-lg text-white"
-             style="background: linear-gradient(135deg, #ff690b, #f79050);">
-          
-          <!-- Heading -->
-          <h2 class="mb-3 fw-bold text-center">Book a Table</h2>
-          <p class="text-center mb-4">Reserve your spot at Harukoma and enjoy Osaka’s most beloved sushi experience. Quick, easy, and always with a warm welcome.</p>
-          
-          <!-- Reservation Form -->
-          <form id="reservationForm">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control rounded-pill" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control rounded-pill" placeholder="Your Email" required>
-              </div>
-              <div class="col-md-6">
-                <input type="tel" class="form-control rounded-pill" placeholder="Phone Number" required>
-              </div>
-              <div class="col-md-6">
-                <input type="number" class="form-control rounded-pill" placeholder="No. of Guests" min="1" required>
-              </div>
-              <div class="col-md-6">
-                <input type="date" class="form-control rounded-pill" required>
-              </div>
-              <div class="col-md-6">
-                <input type="time" class="form-control rounded-pill" required>
-              </div>
-            </div>
-            
-            <div class="text-center mt-4">
-              <button type="submit" class="btn btn-light px-5 py-2 rounded-pill fw-bold shadow-sm">
-                Reserve Now
-              </button>
-            </div>
-          </form>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="reservation-card p-5 rounded-4 shadow-lg text-white"
+                        style="background: linear-gradient(135deg, #ff690b, #f79050);">
 
-          <!-- Thank You Card (Hidden by Default) -->
-          <div id="BthankYouCard" class="thank-you-card mt-4 p-4 rounded-4 bg-white text-dark text-center shadow-lg" style="display: none;">
-            <h4 class="fw-bold">🎉 Thank You!</h4>
-            <p>Your reservation has been received. We look forward to welcoming you at Harukoma soon.</p>
-          </div>
+                        <!-- Heading -->
+                        <h2 class="mb-3 fw-bold text-center">Book a Table</h2>
+                        <p class="text-center mb-4">Reserve your spot at Harukoma and enjoy Osaka’s most beloved sushi
+                            experience. Quick, easy, and always with a warm welcome.</p>
+
+                        <!-- Reservation Form -->
+                        <form id="reservationForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control rounded-pill" placeholder="Your Name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control rounded-pill" placeholder="Your Email"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control rounded-pill" placeholder="Phone Number"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control rounded-pill" placeholder="No. of Guests"
+                                        min="1" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control rounded-pill" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="time" class="form-control rounded-pill" required>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-light px-5 py-2 rounded-pill fw-bold shadow-sm">
+                                    Reserve Now
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Thank You Card (Hidden by Default) -->
+                        <div id="BthankYouCard" style="display:none;">
+                            <div class="card shadow p-4 text-center">
+                                <h3>🎉 Thank you! Your reservation is confirmed.</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="gallery py-5 text-white" style="
+    </section>
+    <section class="gallery py-5 text-white" style="
     background-image: url('assets/images/banner.jpg');
     background-size: cover;
     background-position: center;

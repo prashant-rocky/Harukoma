@@ -106,34 +106,42 @@ function createMenuItem(menu) {
     `;
 }
 // reservation
-document.getElementById("reservationForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
+document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("reservationForm");
   const BthankYouCard = document.getElementById("BthankYouCard");
 
-  // Hide form & show thank you card
-  form.style.display = "none";
-  BthankYouCard.style.display = "block";
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
 
-  // After 3 sec hide thank you card & show form again
-  setTimeout(() => {
-    BthankYouCard.style.display = "none";
-    form.style.display = "block";
-    form.reset();
-  }, 3000);
+      // Hide form & show thank you card
+      form.style.display = "none";
+      BthankYouCard.style.display = "block";
+
+      // After 3 sec hide thank you card & show form again
+      setTimeout(() => {
+        BthankYouCard.style.display = "none";
+        form.style.display = "block";
+        form.reset();
+      }, 3000);
+    });
+  }
 });
-// blog
-  const commentForm = document.getElementById("commentForm");
-    const successMessage = document.getElementById("successMessage");
 
+document.addEventListener("DOMContentLoaded", function() {
+  const commentForm = document.getElementById("commentForm");
+  const successMessage = document.getElementById("successMessage");
+
+  if (commentForm && successMessage) {
     commentForm.addEventListener("submit", function(e) {
       e.preventDefault();
       successMessage.style.display = "block";
-      
+
       // Hide success message after 3 sec
       setTimeout(() => {
         successMessage.style.display = "none";
         commentForm.reset();
       }, 3000);
     });
+  }
+});
