@@ -225,14 +225,14 @@
     </footer>
      <script>
         // ---------------- Menu Data ----------------
-        const menuData1 = [
+        const mymenu1 = [
     { id: 1, name: "Maguro (まぐろ – Tuna Sushi)", description: "Thick, fresh slices of tuna served on seasoned rice.", price: "¥450", image: "assets/images/product1.jpg" },
     { id: 2, name: "Sake (サーモン – Salmon Sushi)", description: "Rich, buttery salmon cut generously.", price: "¥400", image: "assets/images/product2.jfif" },
     { id: 3, name: "Hamachi (はまち – Yellowtail Sushi)", description: "Fresh, flavorful yellowtail, a local favorite.", price: "¥480", image: "assets/images/product3.png" },
     { id: 4, name: "Ebi (えび – Shrimp Sushi)", description: "Sweet and tender shrimp paired with fluffy sushi rice.", price: "¥380", image: "assets/images/product4.webp" }
 ];
 
-const menuData2 = [
+const mymenu2 = [
     { id: 5, name: "Uni (うに – Sea Urchin Sushi)", description: "Creamy, delicate, and unforgettable.", price: "¥650", image: "assets/images/product5.webp" },
     { id: 6, name: "Ikura (いくら – Salmon Roe Sushi)", description: "Bursting with flavor, served generously.", price: "¥600", image: "assets/images/product6.jfif" },
     { id: 7, name: "Anago (あなご – Sea Eel Sushi)", description: "Lightly grilled eel with sweet glaze.", price: "¥500", image: "assets/images/product7.jpg" },
@@ -261,14 +261,14 @@ const menuData2 = [
         document.addEventListener("DOMContentLoaded", () => {
             const singleMenu1 = document.getElementById("singleMenu1");
             if (singleMenu1) {
-                menuData1.forEach(menu => {
+                mymenu1.forEach(menu => {
                     singleMenu1.innerHTML += createMenuItem(menu);
                 });
             }
 
             const singleMenu2 = document.getElementById("singleMenu2");
             if (singleMenu2) {
-                menuData2.forEach(menu => {
+                mymenu2.forEach(menu => {
                     singleMenu2.innerHTML += createMenuItem(menu);
                 });
             }
